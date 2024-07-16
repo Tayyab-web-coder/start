@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const path = window.location.pathname;
         if (user) {
             if (path === '/index.html' || path === '/') {
-                window.location.href = 'dashboard.html';
+                window.location.href = 'login.html';
             }
         } else {
             if (path === '/dashboard.html') {
