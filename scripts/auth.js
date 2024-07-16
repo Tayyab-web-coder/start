@@ -41,7 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     window.location.href = 'dashboard.html';
                 })
                 .catch((error) => {
-                    alert('Please sign up first.');
+                    alert('Invalid login credentials. Please sign up first.');
+                    const signupLink = document.createElement('a');
+                    signupLink.href = 'signup.html';
+                    signupLink.innerText = 'Go to Sign Up';
+                    document.body.appendChild(signupLink);
                 });
         });
     }

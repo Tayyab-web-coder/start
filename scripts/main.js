@@ -5,7 +5,7 @@ import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.3/f
 document.addEventListener('DOMContentLoaded', () => {
     onAuthStateChanged(auth, (user) => {
         if (user) {
-            if (window.location.pathname === '/index.html') {
+            if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
                 window.location.href = 'dashboard.html';
             }
         } else {

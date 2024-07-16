@@ -1,3 +1,4 @@
+
 // scripts/firebase-config.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
@@ -11,8 +12,6 @@ const firebaseConfig = {
     appId: "1:518272025027:web:bade58467c388fe1b43d76",
     measurementId: "G-3WTYL1FCGV"
 };
-
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
